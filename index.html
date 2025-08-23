@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="informacoes">
+        <h1>Gerador de Senhas Aleatórias</h1>
+        <h2>Personalize sua senha</h2>
+
+        <div class="inputs">
+          <label>
+            <p>Quantidade total de caracteres:</p>
+            <input type="number" id="total" min="4" max="50" value="10" />
+          </label>
+          <label>
+            <p>Quantidade de letras:</p>
+            <input type="number" id="letras" min="0" value="6" />
+          </label>
+          <label>
+            <p>Quantidade de números:</p>
+            <input type="number" id="numeros" min="0" value="4" />
+          </label>
+          <label>
+            <p>Quantidade de símbolos:</p>
+            <input type="number" id="simbolos" min="0" value="0" />
+          </label>
+          <label>
+            <p>Quantidade de senhas criadas:</p>
+            <input type="number" id="quantidade" min="1" value="1" />
+          </label>
+        </div>
+
+        <div id="aviso" class="aviso"></div>
+
+        <button id="gerar">Gerar Senha</button>
+
+        <div class="resultado">
+          <h3>Senha gerada:</h3>
+          <p id="senha"></p>
+        </div>
+
+        <div class="historico">
+          <h3>Histórico de senhas</h3>
+          <ul id="lista-historico"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
